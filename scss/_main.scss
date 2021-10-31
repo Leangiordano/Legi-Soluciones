@@ -1,0 +1,42 @@
+@mixin varios ($grid){
+    grid-area: $grid;
+    margin: 15px;
+    padding: 15px;
+    margin-top: 40px;
+    color: black;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.menu-responsive{
+        display: block;
+        padding: 0%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        .contain-nav-responsive{
+            background-color: red;
+        }
+    }
+    .paginas{
+        font-weight: bolder;
+    }
+
+.formulario{
+    font-weight: bolder;
+    color: white;
+    margin: 5px;
+}
+
+.login{
+    width: ($width/2)+25;
+    @include varios (login)
+}
+.registrate{
+    width: ($width/3)+35;
+    @include varios (registrate)
+}
+.conocenos{
+    width: ($width/2);
+    @include varios (conocenos)
+}

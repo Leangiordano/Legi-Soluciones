@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /*background-color: black;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#243949), to(#517fa4));
+  background-image: linear-gradient(to bottom, #243949 0%, #517fa4 100%);
+  height: 100vh 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.logo {
+  float: left;
+}
+
+header .titulo__principal {
+  color: #FF0000;
+  font-family: 'Reggae One', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+  font-style: italic;
+}
+
+header section {
+  background-color: rgba(255, 255, 255, 0.815);
+  border-radius: 5px;
+}
+
+header section .textos__encabezados {
+  color: #c70606;
+  text-align: center;
+  font-size: 15px;
+}
+
+header section .animate__animated.animate__fadeIn {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes animate__animated {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate__animated {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.menu-responsive {
+  display: block;
+  padding: 0%;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-responsive .contain-nav-responsive {
+  background-color: red;
+}
+
+.paginas {
+  font-weight: bolder;
+}
+
+.formulario {
+  font-weight: bolder;
+  color: white;
+  margin: 5px;
+}
+
+.login {
+  width: 75%;
+  grid-area: login;
+  margin: 15px;
+  padding: 15px;
+  margin-top: 40px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.registrate {
+  width: 68.33333%;
+  grid-area: registrate;
+  margin: 15px;
+  padding: 15px;
+  margin-top: 40px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.conocenos {
+  width: 50%;
+  grid-area: conocenos;
+  margin: 15px;
+  padding: 15px;
+  margin-top: 40px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+}
+
+footer {
+  margin-top: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer .marcas__recomendadas {
+  grid-area: marcas;
+  border: 3px solid black;
+  background-color: rgba(255, 235, 205, 0.795);
+  display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.redes__sociales {
+  grid-area: redes;
+  border: 3px solid black;
+  background-color: rgba(255, 235, 205, 0.795);
+  display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+}
+
+.footer {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .titulo__principal {
+    color: #FF0000;
+    font-family: 'Reggae One', cursive;
+    font-size: 45px;
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+  }
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #243949), color-stop(60%, #517fa4));
+    background-image: linear-gradient(to bottom, #243949 40%, #517fa4 60%);
+  }
+  body .logo {
+    width: 130px;
+  }
+  header section .textos__encabezados {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+  }
+  .footer {
+    font-size: 24px;
+  }
+  .arctic {
+    width: 65px;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "marcas redes" "copyright copyright";
+    gap: 10px;
+  }
+  .copyright {
+    text-align: center;
+    font-weight: bolder;
+    grid-column: span 2;
+    font-size: 12px;
+    color: white;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header .titulo__principal {
+    color: #FF0000;
+    font-family: 'Reggae One', cursive;
+    font-size: 60px;
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+  }
+  body .logo {
+    width: 160px;
+  }
+  header section .textos__encabezados {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+  }
+  main .menu-responsive {
+    display: block;
+    padding: 0%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+  }
+  main .menu-responsive .contain-nav-responsive {
+    background-color: red;
+  }
+  .arctic {
+    width: 75px;
+  }
+  .copyright {
+    text-align: center;
+    font-weight: bolder;
+    grid-column: span 2;
+    font-size: 16px;
+    color: white;
+    margin: auto;
+  }
+}
+
+.form-login {
+  width: 400px;
+  height: 340px;
+  background: #4e4d4d;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 4px solid #017bab;
+  color: white;
+}
+
+.form-login h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+
+.controls {
+  width: 100%;
+  border: 1px solid #017bab;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: #017bab;
+  border: none;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.form-login p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.form-login a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+}

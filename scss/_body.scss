@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /*background-color: black;*/
+    background-image: linear-gradient(to bottom, #243949 0%, #517fa4 100%);
+    height: 100vh 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }

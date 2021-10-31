@@ -1,0 +1,99 @@
+@media only screen and (min-width: 768px){
+    header{
+        .titulo__principal{
+            color: #FF0000;
+            font-family: 'Reggae One', cursive;
+            font-size: 45px;
+            text-align: center;
+            padding: 50px;
+            font-style: italic; 
+        }
+    }
+    body{
+        background-image: linear-gradient(to bottom, #243949 40%, #517fa4 60%);
+        .logo{
+            width: 130px;
+        }
+    }
+    header{
+        section{
+            .textos__encabezados{
+                color: red;
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+    }
+.footer{
+    font-size: 24px;
+} 
+.arctic{
+    width: 65px;
+}
+
+footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "marcas redes"
+        "copyright copyright";
+        gap: 10px;
+    }
+    .copyright{
+        text-align: center;
+        font-weight: bolder;
+        grid-column: span 2;
+        font-size: 12px;
+        color: white;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1024px){
+    header{
+        .titulo__principal{
+            color: #FF0000;
+            font-family: 'Reggae One', cursive;
+            font-size: 60px;
+            text-align: center;
+            padding: 50px;
+            font-style: italic; 
+        } 
+}
+    body{
+        .logo{
+            width: 160px;
+        }
+    }
+    header{
+        section{
+            .textos__encabezados{
+                color: red;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }    
+        main{
+        .menu-responsive{
+            display: block;
+            padding: 0%;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 1rem;
+            .contain-nav-responsive{
+                background-color: red;
+            }
+        }
+    }
+.arctic{
+    width: 75px;
+}
+    .copyright{
+        text-align: center;
+        font-weight: bolder;
+        grid-column: span 2;
+        font-size: 16px;
+        color: white;
+        margin: auto;
+    }
+}
